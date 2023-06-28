@@ -13,12 +13,14 @@ namespace DataAccess.Repository
 
         public ICategoryRepo Category { get; private set; }
         public ICoverRepo Cover { get; private set; }
+        public IBookRepo Book { get; private set; }
 
         public UnitOfWork(ApplicationDbContext db)
         {
             _db = db;
             Category = new CategoryRepo(_db);
             Cover = new CoverRepo(_db);
+            Book = new BookRepo(_db);
         }
 
         public void Commit()

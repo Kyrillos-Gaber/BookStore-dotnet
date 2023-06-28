@@ -9,5 +9,6 @@ namespace DataAccess
 
         public DbSet<Category> Categories { get; set; }
         public DbSet<Cover> Covers { get; set; }
+        public DbSet<Book> Books { get; set; }
     }
 }

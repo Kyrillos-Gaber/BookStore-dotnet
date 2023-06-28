@@ -18,8 +18,4 @@
     <ProjectReference Include="..\Book.DataAccess\DataAccess.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
 </Project>

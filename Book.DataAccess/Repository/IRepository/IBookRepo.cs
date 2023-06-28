@@ -7,14 +7,9 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Repository.IRepository
 {
-    public interface IUnitOfWork
+    public interface IBookRepo : IRepository<Book>
     {
-        ICategoryRepo Category { get; }
+        void Update(Book book);
 
-        ICoverRepo Cover { get; }
-
-        IBookRepo Book { get; }
-
-        void Commit();
     }
 }
